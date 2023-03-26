@@ -9,41 +9,30 @@
   </head>
   <body>
     <header>
-    <h1 id="title">Simple TODO list</h1>
-    </header>
-    <div class="app">
-      <div class="app__input">
-      <label for="text" class="app__input-name">Full Name:</label>
-      <input type="text" class="app__input-box">
-    </div>
-      <div class="app__edit">
-      <label for="text" class="app__lable-edit">Edit ToDo:</label>
-      <input type="text" class="app__input-edit" value="Caren">
-      <button class="app__btn">Modify</button>
-    </div>
-    <div class="app__title-list">
-      <h3>ToDo</h3>
-      <h3>Options</h3>
-    </div>
-    <div class="app__container-list">
-      <div class="list-1">
-      <input type="text" class="app__input-box-list" value="Caren">
-      <button class="btn-edit">Edit</button>
-      <button class="btn-delete">Delete</button>
-    </div>
-    <div class="list-2">
-      <input type="text" class="app__input-box-list" value="Valentina">
-      <button class="btn-edit">Edit</button>
-      <button class="btn-delete">Delete</button>
-    </div>
-    <div class="list-3">
-      <input type="text" class="app__input-box-list" value="Valentin">
-      <button class="btn-edit">Edit</button>
-      <button class="btn-delete">Delete</button>
-    </div>
-    </div>
-    </div>
-    <script type="module" src="/main.js"></script>
+
+      <div class="header__titulo">
+          <h1>Lista de tareas</h1>
+      </div>
+
+      <section class="header__datos">
+          <p class="datos__total">Total tareas: 0  </p>
+          <p class="datos__completadas"> Tareas Completadas: 0</p>
+      </section>
+  </header>
+  <main>
+      <div class="contenedor">
+          <form class="formulario" id="formulario">
+              <h4>Formulario</h4>
+              <input type="text" id="tarea">
+              <input type="submit" value="ADD ">
+          </form>
+          <div class="tareas" id="tareas">
+              
+              <h5>NO HAS AGREGADO NINGUNA TAREA</h5>
+          </div>
+      </div>
+  </main>
+    <script type="module" src="/js/app.js"></script>
   </body>
   <footer> &copy; CAREN SALLES</footer>
 </html>
