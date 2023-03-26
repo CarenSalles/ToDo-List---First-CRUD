@@ -1,7 +1,6 @@
-
 header {
     width: 100%;
-    height: auto;
+    height: auto;                            
     background-color:#5e083d;
   
 
@@ -10,7 +9,7 @@ header {
     text-align: center;
     text-transform: uppercase;
     padding: 10px;
-    color: aliceblue;
+    color: white;
     margin-bottom: 2em;
     font-weight: bold;
     
