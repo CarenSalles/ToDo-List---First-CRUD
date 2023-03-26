@@ -5,33 +5,45 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise-ToDoList-FirstCRUD</title>
+    <link rel="stylesheet" href="./src/styles.css">
   </head>
   <body>
-    <header id="title">
-    <h1>Simple TODO list</h1>
+    <header>
+    <h1 id="title">Simple TODO list</h1>
     </header>
     <div class="app">
-      <label for="text" class="app__lable-name">Full Name:</label>
-      <input type="text" class="app__input-name">
+      <div class="app__input">
+      <label for="text" class="app__input-name">Full Name:</label>
+      <input type="text" class="app__input-box">
+    </div>
+      <div class="app__edit">
       <label for="text" class="app__lable-edit">Edit ToDo:</label>
-      <input type="text" class="app__input-edit">
+      <input type="text" class="app__input-edit" value="Caren">
       <button class="app__btn">Modify</button>
+    </div>
     <div class="app__title-list">
       <h3>ToDo</h3>
       <h3>Options</h3>
     </div>
     <div class="app__container-list">
-      <h3>Caren</h3>
-      <button>Edit</button>
-      <button>Delete</button>
-      <h3>Valentina</h3>
-      <button>Edit</button>
-      <button>Delete</button>
-      <h3>Valentin</h3>
-      <button>Edit</button>
-      <button>Delete</button>
+      <div class="list-1">
+      <input type="text" class="app__input-box-list" value="Caren">
+      <button class="btn-edit">Edit</button>
+      <button class="btn-delete">Delete</button>
+    </div>
+    <div class="list-2">
+      <input type="text" class="app__input-box-list" value="Valentina">
+      <button class="btn-edit">Edit</button>
+      <button class="btn-delete">Delete</button>
+    </div>
+    <div class="list-3">
+      <input type="text" class="app__input-box-list" value="Valentin">
+      <button class="btn-edit">Edit</button>
+      <button class="btn-delete">Delete</button>
+    </div>
     </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
+  <footer> &copy; CAREN SALLES</footer>
 </html>
